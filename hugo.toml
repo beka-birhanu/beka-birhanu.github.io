@@ -1,0 +1,10 @@
+baseURL = 'https://beka-birhanu.github.io/'
+locale = 'en-us'
+title = 'Beka Birhanu'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "catppuccin-mocha"
+  [markup.goldmark.renderer]
+    unsafe = true

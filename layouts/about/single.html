@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<div class="container"><div class="site">
+  {{ partial "sidebar.html" . }}
+  <div class="main">
+    <div class="about-prose">{{ .Content }}</div>
+    {{ partial "footer.html" . }}
+  </div>
+</div></div>
+</body>
+</html>

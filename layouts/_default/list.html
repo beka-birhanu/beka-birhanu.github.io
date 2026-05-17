@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<div class="container"><div class="site">
+  {{ partial "sidebar.html" . }}
+  <div class="main">
+    <ul class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          <span class="post-title">{{ .Title }}</span>
+          <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ partial "footer.html" . }}
+  </div>
+</div></div>
+</body>
+</html>

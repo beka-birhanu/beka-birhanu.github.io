@@ -1,0 +1,16 @@
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <img class="avatar" src="/logo.png" alt="Beka Birhanu">
+    <div class="sidebar-name">Beka Birhanu</div>
+  </div>
+  <ul class="sidebar-nav">
+    <li>
+      {{ if or (eq .RelPermalink "/about/") .IsHome }}<span class="dot"></span>{{ end }}
+      <a href="/" {{ if or (eq .RelPermalink "/about/") .IsHome }}class="active"{{ end }}>About</a>
+    </li>
+    <li>
+      {{ if eq .Section "writing" }}<span class="dot"></span>{{ end }}
+      <a href="/writing/" {{ if eq .Section "writing" }}class="active"{{ end }}>Writing</a>
+    </li>
+  </ul>
+</aside>
